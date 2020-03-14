@@ -8,10 +8,12 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "dot-env": "^0.0.1",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.0",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "react": "^16.13.0",
     "react-app-rewired": "^2.1.5",
@@ -25,21 +27,6 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "format": "prettier --config .prettierrc --write  \"./src/**/*.js\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "airbnb",
-      "prettier"
-    ],
-    "rules": {
-      "react/prefer-stateless-function": 0,
-      "react/jsx-filename-extension": 0,
-      "react/jsx-one-expression-per-line": 0
-    },
-    "env": {
-      "browser": true
-    }
   },
   "lint-staged": {
     "*.js": [

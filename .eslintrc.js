@@ -15,11 +15,4 @@ module.exports = {
     browser: true,
     jest: true,
   },
-  settings: {
-    'import/resolver': {
-      webpack: {
-        config: path.join(__dirname, '/config-overrides.js'),
-      },
-    },
-  },
 };

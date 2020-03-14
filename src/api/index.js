@@ -6,5 +6,5 @@ const MiseApi = axios.create({
 });
 
 export default {
-  get: params => MiseApi.get('', {params}),
+  get: params => MiseApi.get('', { params }),
 };
