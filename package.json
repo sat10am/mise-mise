@@ -16,15 +16,14 @@
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "react": "^16.13.0",
-    "react-app-rewired": "^2.1.5",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --config .prettierrc --write  \"./src/**/*.js\""
   },
