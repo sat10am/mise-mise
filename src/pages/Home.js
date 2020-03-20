@@ -1,6 +1,5 @@
-/* eslint-disable */
 import React, { useEffect } from 'react';
-import MiseApi from '@/api/index';
+import MiseApi from '../api/index';
 
 export default function Home() {
   useEffect(() => {
