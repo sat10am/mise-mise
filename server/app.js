@@ -9,7 +9,7 @@ const detectPort = require('detect-port');
 // server setup
 let port;
 async function configServer() {
-  port = 5000 || (await detectPort(5000));
+  port = 4000 || (await detectPort(4000));
 }
 configServer();
 
