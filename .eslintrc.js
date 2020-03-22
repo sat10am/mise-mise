@@ -12,12 +12,10 @@ module.exports = {
     'react/jsx-filename-extension': OFF,
     'react/jsx-one-expression-per-line': OFF,
     'import/no-extraneous-dependencies': OFF,
-    // TODO Webpack 설정을 잡아서 lint 에러가 안나게 해야 함 임시 방편
-    // plugin 설정을 해줬는데 -> alias는 못 잡는 이슈가 있다.
-    'import/no-unresolved': OFF,
     'react-hooks/rules-of-hooks': ERROR, // Checks rules of Hooks
-    'react-hooks/exhaustive-deps': WARNING, // Checks effect dependencies
+    'react-hooks/exhaustive-deps': ERROR, // Checks effect dependencies
     'linebreak-style': ERROR,
+    'import/no-unresolved': OFF,
   },
   parserOptions: {
     ecmaFeatures: {
@@ -34,6 +32,10 @@ module.exports = {
     'import/resolver': {
       webpack: {
         config: 'config-overrides.js',
+      },
+      alias: {
+        map: ['@', path.resolve(__dirname, 'src')],
+        extensions: ['.ts', '.js', '.jsx', '.json'],
       },
     },
   },
