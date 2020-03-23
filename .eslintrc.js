@@ -15,7 +15,6 @@ module.exports = {
     'react-hooks/rules-of-hooks': ERROR, // Checks rules of Hooks
     'react-hooks/exhaustive-deps': ERROR, // Checks effect dependencies
     'linebreak-style': ERROR,
-    'import/no-unresolved': OFF,
   },
   parserOptions: {
     ecmaFeatures: {
@@ -34,7 +33,7 @@ module.exports = {
         config: 'config-overrides.js',
       },
       alias: {
-        map: ['@', path.resolve(__dirname, 'src')],
+        map: [['@', path.resolve(__dirname, 'src')]],
         extensions: ['.ts', '.js', '.jsx', '.json'],
       },
     },
