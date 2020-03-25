@@ -15,6 +15,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': ERROR, // Checks rules of Hooks
     'react-hooks/exhaustive-deps': ERROR, // Checks effect dependencies
     'linebreak-style': ERROR,
+    'import/prefer-default-export': WARNING,
   },
   parserOptions: {
     ecmaFeatures: {

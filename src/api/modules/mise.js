@@ -1,19 +1,12 @@
 import axios from 'axios';
 
-const defaultParams = {
-  params: {
-    ServiceKey: process.env.REACT_APP_MISE_SERVICE_KEY,
-    _returnType: 'json',
-  },
-};
-
 const MiseApi = (() => {
   const instance = axios.create({
-    baseURL: `${process.env.REACT_APP_MISE_BASE_URL}/UlfptcaAlarmInqireSvc`,
+    baseURL: `${process.env.REACT_APP_MISE_BASE_URL_DEV}`,
   });
   instance.interceptors.request.use(
     config => {
-      return Object.assign(config, defaultParams);
+      return config;
     },
     error => {
       return Promise.reject(error.response);
@@ -31,7 +24,7 @@ const MiseApi = (() => {
 })();
 
 export default {
-  get: params => {
-    MiseApi.get('', { params });
+  getMyLocationPm10: () => {
+    MiseApi.get('/mise/pm10');
   },
 };
